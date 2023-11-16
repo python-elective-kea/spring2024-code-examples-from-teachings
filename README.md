@@ -1,5 +1,7 @@
 # Code examples and exercises from "Introduction to python at kea spring 2024"
 
+In this elective your editor will be "Github Codespaces".
+
 ## Github Codepsaces
 In order for this to work, you will need to have access to [github codespaces](https://github.com/codespaces).    
 If you do not allready have that you can get it through [GitHub Student Developer Pack](https://education.github.com/pack#offers) 
