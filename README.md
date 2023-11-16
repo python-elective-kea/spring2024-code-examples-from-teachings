@@ -8,14 +8,7 @@ If you do not allready have that you can get it through [GitHub Student Develope
 * Browse to [Introduction to python github repository](https://github.com/python-elective-kea/spring2024-code-examples-from-teachings)
 * Click on the green "<> Code" button and then click on "Create codespace on master"
 
-![](../_static/codespace.png)
-
-This will open a codespace like this:
-
-![](../_static/codespace2.png)
-
-This will be your editor in this elective.    
-
+This will open a codespace and this will be your editor in this elective.    
 
 ### Important: Working on branches
 * You should before doing enything else always create a new branch. (I exspect that you know how to do that).    
