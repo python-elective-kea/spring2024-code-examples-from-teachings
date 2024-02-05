@@ -10,24 +10,29 @@
 # where the elements of the first list are the keys, and the elements of the second list are the values.
 # e.g. create_dict(['a', 'b', 'c'], [1, 2, 3]) yields {'a': 1, 'b': 2, 'c': 3}
 def create_dict(keys, values):
-    # +++your code here+++
-    return 
+    result = {}
+    for i in range(len(keys)):
+        result[keys[i]] = values[i]
+    return result
 
 # B. Merge Dictionaries
 # Write a function `merge_dicts` that takes two dictionaries and merges them into one.
 # If there are overlapping keys, the values from the second dictionary should be used.
 # e.g. merge_dicts({'a': 1, 'b': 2}, {'b': 3, 'c': 4}) yields {'a': 1, 'b': 3, 'c': 4}
 def merge_dicts(dict1, dict2):
-    # +++your code here+++
-    return 
+    a = dict1.update(dict2)
+
+    return a
 
 # C. Get Value
 # Write a function `get_value` that takes a dictionary and a key, and returns the value associated with that key.
 # If the key is not in the dictionary, return 'Key not found'.
 # e.g. get_value({'a': 1, 'b': 2}, 'b') yields 2
 def get_value(dict, key):
-    # +++your code here+++
-    return 
+
+    value = dict.get(key, 'Key not found')
+
+    return value
 
 # D. Key Exists
 # Write a function `key_exists` that takes a dictionary and a key, and returns True if the key exists in the dictionary, otherwise False.
