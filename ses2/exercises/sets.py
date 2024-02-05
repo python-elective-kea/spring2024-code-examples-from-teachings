@@ -10,7 +10,7 @@
 # e.g. create_set([1, 2, 3, 2]) yields {1, 2, 3}
 def create_set(list):
     # +++your code here+++
-    return 
+    return set(list)
 
 # B. Set Union
 # Write a function `union_sets` that takes two sets and returns their union.
@@ -18,7 +18,7 @@ def create_set(list):
 # Make 2 versions, one using the set method, and one using an operator.
 def union_sets(s1, s2):
     # +++your code here+++
-    return 
+    return s1 | s2
 
 # C. Set Intersection
 # Write a function `intersect_sets` that takes two sets and returns their intersection.
@@ -26,7 +26,7 @@ def union_sets(s1, s2):
 # Make 2 versions, one using the set method, and one using an operator.
 def intersect_sets(s1, s2):
     # +++your code here+++
-    return
+    return s1 & s2
 
 # D. Set Difference
 # Write a function `difference_sets` that takes two sets and returns the difference (elements in the first set but not in the second).
@@ -34,7 +34,7 @@ def intersect_sets(s1, s2):
 # Make 2 versions, one using the set method, and one using an operator.
 def difference_sets(s1, s2):
     # +++your code here+++
-    return
+    return s1 - s2 
 
 # E. Symmetric Difference
 # Write a function `symmetric_difference_sets` that takes two sets and returns their symmetric difference (elements in either set but not in both).
@@ -42,7 +42,7 @@ def difference_sets(s1, s2):
 # Make 2 versions, one using the set method, and one using an operator.
 def symmetric_difference_sets(s1, s2):
     # +++your code here+++
-    return
+    return s1 ^ s2
 
 # F. Set Subset
 # Write a function `is_subset` that takes two sets and returns `True` if the first set is a subset of the second set, otherwise `False`.
@@ -50,7 +50,7 @@ def symmetric_difference_sets(s1, s2):
 # Make 2 versions, one using the set method, and one using an operator.
 def is_subset(s1, s2):
     # +++your code here+++
-    return
+    return s1 <= s2
 
 # G. Set Superset
 # Write a function `is_superset` that takes two sets and returns `True` if the first set is a superset of the second set, otherwise `False`.
@@ -58,7 +58,7 @@ def is_subset(s1, s2):
 # Make 2 versions, one using the set method, and one using an operator.
 def is_superset(s1, s2):
     # +++your code here+++
-    return
+    return s1 >= s2
 
 
 # Function to test the output against the expected result
