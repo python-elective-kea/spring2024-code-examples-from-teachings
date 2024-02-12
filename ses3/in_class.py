@@ -88,13 +88,28 @@ def a_in(s):
 print(sorted(l, key=a_in))
 
 # Ex: Text editor plugin simulation
-s = 'This is just a sample text that could have been a million times longer.\n\nYours Johnny'
+str = 'This is just a sample text that could have been a million times longer.\n\nYours Johnny'
+
+print(len(str)) 
+
+print(len([char for char in str if char != ' ']))
+
+print(len(str.split(' ')))
 
 # Ex: Sort a list of tuples
+t = [(1,2),(2,2),(3,2),(2,1),(2,2),(1,5), (10,4), (10, 1), (3, 1)]
 
+sorted_t = sorted(t, key=lambda x: (x[1], x[0]))
+
+print(sorted_t)
 
 # Ex: Logic if / else
 
+# TODO: create eval system
+""" def grade_eval_system(score):
+    return
+
+ """
 
 # Ex: And / or logic
 
