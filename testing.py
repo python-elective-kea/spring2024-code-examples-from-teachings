@@ -37,4 +37,17 @@ print(sorted(a)) # sorts by the 1st, then 2nd part of the tuple'
 
 # tuple, parallell assignment
 (x, y) = (1, 2) # assigns 1 to x, and 2 to y
-print(f'x: {x}, y: {y}') 
+print(f'x: {x}, y: {y}')
+
+# list comprehension and filter
+fruits = "Banana pear PEACH strawberry tomato".split()
+upper_cased = []
+for word in fruits:
+    if word.islower():
+        upper_cased.append(word.upper())
+
+print(upper_cased)
+
+upper_cased = [word.upper() for word in fruits if word.islower()]
+
+print(upper_cased)
