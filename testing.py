@@ -51,3 +51,8 @@ print(upper_cased)
 upper_cased = [word.upper() for word in fruits if word.islower()]
 
 print(upper_cased)
+
+# generer en liste med tuples med forskellige ranges
+print(
+    [(i,j,k) for i in range(1) for j in range(2) for k in range(3)]
+)
