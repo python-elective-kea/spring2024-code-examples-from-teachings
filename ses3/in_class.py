@@ -112,6 +112,3 @@ print(sorted_t)
  """
 
 # Ex: And / or logic
-
-
-# Ex: list and strings exercises
