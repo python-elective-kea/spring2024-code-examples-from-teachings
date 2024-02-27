@@ -1,5 +1,7 @@
 import sqlite3
 
+# sqlite3 er en DB-API 2.0 interface for SQLite databases
+
 # Create a Database called Zoo, with an Animal Table.
 
 con = sqlite3.connect("zoo.db") # opretter connection til on-disk db

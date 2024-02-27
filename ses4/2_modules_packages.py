@@ -11,8 +11,9 @@ from math import pi
 print(pi)
 
 print('\n--- OS EXERCISES ---')
-# Do the following task using the os module
+# Do the following tasks using the os module
 import os
+
 # 1. create a folder and name the folder 'os_exercises.'   
 os.chdir("/workspaces/spring2024-code-examples-from-teachings/ses4")
 print(f'current dir: {os.getcwd()}')
