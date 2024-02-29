@@ -10,56 +10,64 @@
 # where the elements of the first list are the keys, and the elements of the second list are the values.
 # e.g. create_dict(['a', 'b', 'c'], [1, 2, 3]) yields {'a': 1, 'b': 2, 'c': 3}
 def create_dict(keys, values):
-    # +++your code here+++
-    return 
+    result = {}
+    for i in range(len(keys)):
+        result[keys[i]] = values[i]
+    return result
 
 # B. Merge Dictionaries
 # Write a function `merge_dicts` that takes two dictionaries and merges them into one.
 # If there are overlapping keys, the values from the second dictionary should be used.
 # e.g. merge_dicts({'a': 1, 'b': 2}, {'b': 3, 'c': 4}) yields {'a': 1, 'b': 3, 'c': 4}
+
 def merge_dicts(dict1, dict2):
-    # +++your code here+++
-    return 
+    a = dict1.update(dict2)
+
+    return a
 
 # C. Get Value
 # Write a function `get_value` that takes a dictionary and a key, and returns the value associated with that key.
 # If the key is not in the dictionary, return 'Key not found'.
 # e.g. get_value({'a': 1, 'b': 2}, 'b') yields 2
+
 def get_value(dict, key):
-    # +++your code here+++
-    return 
+    value = dict.get(key, 'Key not found')
+    return value
 
 # D. Key Exists
 # Write a function `key_exists` that takes a dictionary and a key, and returns True if the key exists in the dictionary, otherwise False.
 # e.g. key_exists({'a': 1, 'b': 2}, 'c') yields False
+
 def key_exists(dict, key):
-    # +++your code here+++
-    return 
+    return key in dict
 
 # E. Update Value
 # Write a function `update_value` that takes a dictionary, a key, and a value.
 # Update the value associated with the key in the dictionary, or add the key-value pair if the key does not exist.
 # Return the updated dictionary.
 # e.g. update_value({'a': 1, 'b': 2}, 'b', 3) yields {'a': 1, 'b': 3}
+
 def update_value(dict, key, value):
-    # +++your code here+++
-    return 
+    dict[key] = value
+    return  dict
 
 # F. Remove Key
 # Write a function `remove_key` that takes a dictionary and a key, and removes the key from the dictionary.
 # If the key is not in the dictionary, return the original dictionary.
 # e.g. remove_key({'a': 1, 'b': 2}, 'a') yields {'b': 2}
 def remove_key(dict, key):
-    # +++your code here+++
-    return 
+    if key in dict:
+        del dict[key]
+        #dict.pop(key)
+    return dict
 
 # G. Convert to List
 # Write a function `dict_to_list` that takes a dictionary and returns a list of tuples,
 # where each tuple is a key-value pair from the dictionary.
 # e.g. dict_to_list({'a': 1, 'b': 2}) yields [('a', 1), ('b', 2)]
 def dict_to_list(dict):
-    # +++your code here+++
-    return 
+    # print(list(dict.items())) 
+    return list(dict.items()) # omgør faktisk til tuple
 
 # Function to test the output against the expected result
 def test(got, expected):

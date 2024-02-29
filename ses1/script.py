@@ -1,10 +1,10 @@
 
 def message(name):
-    
-    if name == 'Claus':
-        print('Hello' + str(name))
-    else:   
-        print('hsdfjkhslkjdfhlsdkfhlksdj')
 
+    if name == 'Paul'.lower():
+        print('Hello ' + str(name))
+    else:
+        print('No no')
 
-message('Claus')
+message('paul')
+
