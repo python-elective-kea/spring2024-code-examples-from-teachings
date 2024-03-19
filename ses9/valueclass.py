@@ -16,3 +16,4 @@ class Value:
 
     def __add__(self, other):
         return Value(self.data + other.data, '+', (self, other) )
+
